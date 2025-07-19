@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYTECODE 3.0</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/lucide@latest/dist/umd/lucide.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigation -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav-links-container">
+            <a href="#" class="nav-link home-link">Home</a>
+            <a href="#registration" class="nav-link register-link">Register</a>
+            <a href="#contact" class="nav-link contact-link">Contact Us</a>
+        </nav>
+        
+        <!-- Galaxy Background Elements -->
+        <div class="nebula"></div>
+        <div class="planet planet-1"></div>
+        <div class="planet planet-2"></div>
+        <div class="planet planet-3"></div>
+        <div class="stars" id="stars"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star" style="animation-delay: 1s;"></div>
+        <div class="shooting-star" style="animation-delay: 2s;"></div>
+        <div class="background-text">BYTECODE 3.0</div>
+        
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <div class="icon-container">
+                    <i data-lucide="code-2" class="hero-icon"></i>
+                </div>
+                <h1 class="title">BYTECODE 3.0</h1>
+                <div class="title-decoration"></div>
+                <p class="subtitle">
+                    Where Innovation Meets Code. Join us for an extraordinary journey through technology, 
+                    where every line of code shapes the future.
+                </p>
+                <div class="deadline-container">
+                    <div class="deadline-content">
+                        <i  class="deadline-icon"></i>
+                        <span class="deadline-text">Registration closes on April 04, 2025</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Event Forms Grid -->
+        <main class="events-container" id="registration">
+            <div class="selection-rules">
+                <h2><i data-lucide="info"></i> Important Selection Rules</h2>
+                <div class="rules-content">
+                    <div class="rule-group">
+                        <div class="rule-header">
+                            <i data-lucide="calendar" class="rule-icon"></i>
+                            <h3>April 7th Events (Choose One)</h3>
+                        </div>
+                        <div class="rule-items">
+                            <!-- <div class="rule-item">
+                                <i data-lucide="brain"></i>
+                                <p>Quiz Competition</p>
+                            </div> -->
+                            <div class="rule-item">
+                                <i data-lucide="keyboard"></i>
+                                <p>Blind Typing</p>
+                            </div>
+                            <div class="rule-item">
+                                <i data-lucide="code"></i>
+                                <p>Coding Competition</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rule-group">
+                        <div class="rule-header">
+                            <i data-lucide="calendar" class="rule-icon"></i>
+                            <h3>April 8th Events (Choose One)</h3>
+                        </div>
+                        <div class="rule-items">
+                            <div class="rule-item">
+                                <i data-lucide="layout"></i>
+                                <p>Web Design</p>
+                            </div>
+                            <div class="rule-item">
+                                <i data-lucide="flag"></i>
+                                <p>Capture The Flag</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="events-grid" id="eventsGrid">
+                <!-- Events will be dynamically inserted here -->
+            </div>
+        </main>
+
+        <!-- Contact Us Section -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Department Of Computer Science And Engineering</h2>
+            
+            <div class="main-coordinators">
+                <div class="coordinator-card">
+                    <h3>Faculty Coordinator</h3>
+                    <p>Sleeba Mathew C</p>
+                </div>
+                <div class="coordinator-card">
+                    <h3>Student Coordinator</h3>
+                    <p>Shahoor - 9035397797 </p>
+                </div>
+            </div>
+
+            <div class="event-coordinators">
+                <!-- Web Design -->
+                <div class="event-coordinator-container">
+                    <h3>Web Design</h3>
+                    <div class="coordinator-info">
+                        <div class="faculty-coordinator">
+                            <h4>Faculty Coordinator</h4>
+                            <p>Prof. Soumya Santhosha</p>
+                        </div>
+                        <div class="student-coordinators">
+                            <h4>Student Coordinators (6th Sem CSE)</h4>
+                            <p>Sheikh Jawad - 8660309693 </p>
+                            <p>Mohammed Shahir - 9686351333 </p>
+                            <p>Mohammed Sarfraz - 8971182298 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz -->
+                <div class="event-coordinator-container">
+                    <h3>Quiz</h3>
+                    <div class="coordinator-info">
+                        <div class="faculty-coordinator">
+                            <h4>Faculty Coordinator</h4>
+                            <p>Prof. Shyla B G</p>
+                        </div>
+                        <div class="student-coordinators">
+                            <h4>Student Coordinators (6th Sem CSE)</h4>
+                            <p>Mohammed Rayyan – 7022172075 </p>
+                            <p>Shantadevi A Munavalli – 9148832937 </p>
+                            <p>Khalifa Mohammed Usaid – 7483679825 </p>
+                            <p>Rifaaz Ahmed - 8431928108 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blind Typing -->
+                <div class="event-coordinator-container">
+                    <h3>Blind Typing</h3>
+                    <div class="coordinator-info">
+                        <div class="faculty-coordinator">
+                            <h4>Faculty Coordinator</h4>
+                            <p>Prof. Ayisha Thasreefa P</p>
+                        </div>
+                        <div class="student-coordinators">
+                            <h4>Student Coordinators (6th Sem CSE)</h4>
+                            <p>Hansel Thomas Dsouza - 8296229868 </p>
+                            <p>Azeefa Banu - 7996574229 </p>
+                            <p>Shrenitha S - 9019427993 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Capture the Flag -->
+                <div class="event-coordinator-container">
+                    <h3>Capture the Flag</h3>
+                    <div class="coordinator-info">
+                        <div class="faculty-coordinator">
+                            <h4>Faculty Coordinator</h4>
+                            <p>Dr. Athokpam Bikramjit Singh</p>
+                        </div>
+                        <div class="student-coordinators">
+                            <h4>Student Coordinators (6th Sem CSE)</h4>
+                            <p>Ashwin Krishnan C K - 8136881187 </p>
+                            <p>Sanjay M.K - 6364598061 </p>
+                            <p>Vismaya A - 9745708061 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coding -->
+                <div class="event-coordinator-container">
+                    <h3>Coding</h3>
+                    <div class="coordinator-info">
+                        <div class="faculty-coordinator">
+                            <h4>Faculty Coordinator</h4>
+                            <p>Prof. Basavaraj Neelagund</p>
+                        </div>
+                        <div class="student-coordinators">
+                            <h4>Student Coordinators (6th Sem CSE)</h4>
+                            <p>Thushar – 9113233385 </p>
+                            <p>Yukthi Prabhu - 9241646880 </p>
+                            <p>Diya A - 8105685932 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025 BYTECODE 3.0. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
